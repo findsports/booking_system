@@ -40,6 +40,7 @@ background-repeat:repeat-x;
 	margin: 10px 0 0 25px;
 	font-family:myriad pro, Courier New, Courier, monospace;
 	font-size:35px;
+	color:#F89920;
 }
 
 #sport_choice2{
@@ -73,7 +74,7 @@ background-repeat:repeat-x;
 .book{
 	float:inherit;
 	width:200px;
-	margin:320px 0 0 140px;}
+	margin:320px 0 0 120px;}
 
 
 
