@@ -84,12 +84,7 @@ background-repeat:repeat-x;
 input[type=submit]{
 	width:200px;
 	height:40px;
-	background: -webkit-linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	background: -moz-linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	background: -ms-linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	background: -o-linear-gradient(#172C3D 0%,#2A496B 50%,#192430 51%,#000);
-	background: linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	-pie-background: linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
+	background-color:#F89920;
 	
 	-webkit-border-radius-bottomleft: 5px;
 	-webkit-border-radius-topleft: 5px;
@@ -102,12 +97,7 @@ input[type=submit]{
 input[type=submit]:hover {
 	width:200px;
 	height:40px;
-background: -webkit-linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	background: -moz-linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	background: -ms-linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	background: -o-linear-gradient(#172C3D 0%,#2A496B 50%,#192430 51%,#000);
-	background: linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
-	-pie-background: linear-gradient(#172C3D,#2A496B 50%,#192430 51%,#000);
+	background-color:#C93;
 	
 	-webkit-border-radius-bottomleft: 5px;
 	-webkit-border-radius-topleft: 5px;
