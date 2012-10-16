@@ -1,6 +1,7 @@
 ﻿.jqx-widget-summer{border: 2px solid #333;}
-.jqx-fill-state-normal-summer, .jqx-widget-header-summer{ border: 2px solid #AAA; background-color:#06F;box-shadow: 1px 3px 6px #000;}
-.jqx-fill-state-hover-summer, .jqx-scrollbar-thumb-state-normal-summer, .jqx-scrollbar-thumb-state-normal-horizontal-summer{ border-color:#222;  background-color:#888888; color: #fff;}
+/*background for dropdownlist when normal state*/
+.jqx-fill-state-normal-summer, .jqx-widget-header-summer{ border: 2px solid #AAA; background-color:#0CF; background-image:url(../../../image/back.fw.png);box-shadow: 1px 3px 6px #000;}
+.jqx-fill-state-hover-summer, .jqx-scrollbar-thumb-state-normal-summer, .jqx-scrollbar-thumb-state-normal-horizontal-summer{ border-color:#222;  background-image:url(../../../image/back2.fw.png); color: #fff;}
 .jqx-fill-state-pressed-summer{border-color: #f89920; background-color: #f89920; color: #fff; }
 .jqx-fill-state-focus-summer { border-color: #555; }
 
