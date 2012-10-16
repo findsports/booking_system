@@ -1,0 +1,29 @@
+<!DOCTYPE>
+    <html>
+        <head>
+            <title>insert form</title>
+        </head>
+        <script>
+            function validateForm(string)
+            {
+            var x=document.forms["insert"]["activity"].value;
+            var y=document.forms["insert"]["location"].value;
+            var y=document.forms["insert"]["centre"].value;
+            if (x==null || x=="" || y==null || y=="" || z==null || z=="")
+                {
+            alert("All forms must be filled out");
+            return string.charAt(0).toUpperCase() + string.slice(1);
+                }
+            }
+        </script>
+        <body>
+            <form name="insert" action="insert.php" onsubmit="return validateForm()" method="post">
+                Id: <input type="text" name="id" /><br/>
+                Activity: <input type="text" name="activity" /><br/>
+                Location: <input type="text" name="location" /><br/>
+                Centre: <input type="text" name="centre" /><br/>
+                <input type="submit"/>
+            </form>
+           
+        </body>
+    </html>
