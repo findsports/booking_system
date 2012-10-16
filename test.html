@@ -1,0 +1,54 @@
+<html>
+<head>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxdropdownlist.js"></script>
+
+</head>
+<body>
+<div id='content'>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        var source = [
+            "Select Your location",
+            "North London",
+            "South London",
+            "West London",
+            "East London",
+            "City of London",  
+        ];
+
+        // Create a jqxDropDownList  
+        $("#jqxDropDownList").jqxDropDownList({ 
+            source: source,    
+            selectedIndex: 0, 
+            width:   '250px', 
+            height: '35px', 
+            theme: 'summer' 
+        });
+
+        $('#jqxDropDownList').bind('select', function (event) { 
+            $('#location').val($("#jqxDropDownList").jqxDropDownList('getSelectedItem').label);        
+        });
+
+    });
+
+
+</script>
+<div id='jqxDropDownList'></div>
+
+<form>
+<input type="text" id="location" name="location" value="not selected" />
+<input type="submit" value="selected!">
+</form>
+
+<div><?php if (isset($_GET['location'])) print('You selected: '.$_GET['location']); ?></div>
+
+</div>
+</body>
+</html>
