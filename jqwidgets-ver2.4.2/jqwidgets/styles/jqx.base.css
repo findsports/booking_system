@@ -2819,7 +2819,7 @@ of the horizontal scrollbar.*/
 /*applied to all widgets*/
 .jqx-widget{-moz-background-clip: padding; background-clip: padding-box; -webkit-background-clip: padding-box; direction: ltr; -webkit-tap-highlight-color: rgba(0,0,0,0); font-family: Verdana,Arial,sans-serif; font-style: normal; font-size: 13px;}
 
-.jqx-item{ color: inherit; border: 1px solid transparent; background: transparent; }
+.jqx-item{ color: inherit; border: 1px solid transparent; background:#EAEAEA; }
 
 /*applied to containers to set a background and border color. Tabs, NavigationBar, Calendar content.*/
 .jqx-widget-content {-moz-background-clip: padding; background-clip: padding-box; -webkit-background-clip: padding-box; -webkit-tap-highlight-color: rgba(0,0,0,0); font-family: Verdana,Arial,sans-serif; font-style: normal; font-size: 13px; border-color: #c7c7c7; background: #fff; }
