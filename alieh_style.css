@@ -2,16 +2,19 @@
 body {
 	background-attachment:fixed;
 	height:2000px;
-background:url(image/background.png);
-background-repeat:repeat-x;
+	background:#000;
+	background:url(image/women-doing-yoga2.jpg);
+background-repeat:no-repeat;
 
 }
 
 .wrapper{
-	background:#FFF;
-	width:450px;
-	height:570px;
-	margin: 80px auto;	
+	background:url(image/essaie2.fw.png);
+	width:770px;
+	height:450px;
+	margin: 250px auto;
+	background-repeat:repeat;
+	
 }
 
 
@@ -23,7 +26,6 @@ background-repeat:repeat-x;
 	height: 100px;
 	width:450px;
 	margin-top:20px;
-
 }
 
 

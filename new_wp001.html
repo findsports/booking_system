@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+ <title>Booking System</title>
+ 
+ 	<link rel="stylesheet" href="alieh_style.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets-ver2.4.2/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets-ver2.4.2/jqwidgets/styles/jqx.summer.css" type="text/css" />
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets-ver2.4.2/jqwidgets/jqxdropdownlist.js"></script>
+
+
+   <link rel="stylesheet" href="date_picker2/jquery-ui.css" type="text/css" media="all">
+    <link rel="stylesheet" href="date_picker2/ui.theme.css" type="text/css" media="all">
+	<script src="date_picker/jquery.ui.core.js"></script>
+	<script src="date_picker2/jquery.ui.widget.js"></script>
+	<script src="date_picker2/jquery.ui.datepicker.js"></script>
+    
+
+<link rel="stylesheet" href="normalize.css" type="text/css" />
+
+</head>
+
+		
+		
+
+<body>
+
+
+	<div class="wrapper">
+   
+				<br />	<p class="paragraphe"><b><i>Fitness Class Market Place</i></b></p>
+												
+							<div id="middlebar">
+                                    <div id="sport_choice2">
+                                            <div id='content'>
+                                               <script type="text/javascript">
+                                                    $(document).ready(function () {
+                                                        var source = [
+                                                            "Chose area to start",
+                                                            "North London",
+                                                            "South London",
+                                                            "West London",
+                                                            "East London",
+                                                            "City of London",  ];
+                                                        // Create a jqxDropDownList
+                                                        $(".jqxDropDownList").jqxDropDownList({ source: source, selectedIndex: 0, width: '250px', height: '40px', theme: 'summer' });
+                                                     $('.jqxDropDownList').bind('select', function (event) { 
+            $('.location').val($(".jqxDropDownList").jqxDropDownList('getSelectedItem').label);        
+        });
+						    });
+                                                </script>
+                                                <div class='jqxDropDownList'>
+                                     </div>
+      					 		</div>
+                         	</div><!--sport-choice2-->
+                            
+                                                           <!-- Person -->
+                                    <div id="people_div">
+                                          <script type="text/javascript">
+                                                    $(document).ready(function () {
+                                                        var source = [
+                                                            "1 Person",
+                                                            "2 Person",
+                                                            "3 Person",
+                                                            "4 Person",
+                                                            "5 Person",
+															"6 Person",
+															"7 Person",
+															"8 Person",
+															  ];
+                                                        // Create a jqxDropDownList
+                                                        $(".jqxDropDownList2").jqxDropDownList({ source: source, selectedIndex: 0, width: '170px', height: '40px', theme: 'summer' });
+                                                     $('.jqxDropDownList2').bind('select', function (event) { 
+            $('.person').val($(".jqxDropDownList2").jqxDropDownList('getSelectedItem').label);        
+        });
+						    });
+                                                </script>
+                                                <div class='jqxDropDownList2'>
+                                     </div> 
+                                    </div> 
+                                    <!-- end of Person -->
+							
+                            		
+                                    <!-- Time -->
+                                    <div id="time_picker">
+                                            
+                                         <script type="text/javascript">
+                                                    $(document).ready(function () {
+                                                        var source = [
+															"0:00",
+															"0:30",
+															"1:00",
+															"1:30",
+															"2:00",
+															"2:30",
+															"3:00",
+															"3:30",
+															"4:00",
+															"4:30",
+															"5:00",
+															"5:30",
+															"6:00",
+															"6:30",
+															"7:00",
+															"7:30",
+															"8:00",
+															"8:30",
+															"9:00",
+															"9:30",
+															"10:00",
+															"10:30",
+															"11:00",
+															"11:30",
+															"12:00",
+															"12:30",
+															"13:00",
+															"13:30",
+															"14:00",
+															"14:30",
+															"15:00",
+															"15:30",
+															"16:00",
+															"16:30",
+															"17:00",
+															"17:30",
+															"18:00",
+															"18:30",
+															"19:00",
+															"19:30",
+															"20:00",
+															"20:30",
+															"21:00",
+															"21:30",
+															"22:00",
+															"22:30",
+															"23:00",
+															"23:30",  ];
+                                                        // Create a jqxDropDownList
+                                                        $(".jqxDropDownList3").jqxDropDownList({ source: source, selectedIndex: 38, width: '170px', height: '40px', theme: 'summer' });
+                                                     $('.jqxDropDownList3').bind('select', function (event) { 
+            $('.time').val($(".jqxDropDownList3").jqxDropDownList('getSelectedItem').label);        
+        });
+						    });
+                                                </script>
+                                                <div class='jqxDropDownList3'>
+                                     </div>    
+                                            
+                       			 	</div> <!-- En of Time -->
+                                
+                                
+                                
+                            
+                         </div><!--middlebar-->
+                                        <div id="date_picker">
+                        						<div class="demo">
+        
+                           							 <p><div id="datepicker"></div></p>
+        
+                        						</div>
+										</div>
+                                        
+                                        <div class="book">
+                        <form name="book">
+                        
+                          <input type="text" class="location" name="location2" style="display: none" value="not selected"
+                           />
+                          <input type="submit" value="BOOK"/>
+                               <!--<input type="submit" value="BOOK" />-->
+			       <!--<input type="text" id="location" name="location" value="not selected" />-->
+			       <!--<input type="submit" value="selected!"/>-->
+       			</form>
+                						</div> 
+                                        
+     </div>
+     	<script>
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	});
+	</script>
+<script type="text/javascript">
+function showlayer(layer){
+var myLayer = document.getElementById(layer);
+if(myLayer.style.display=="none" || myLayer.style.display==""){
+myLayer.style.display="block";
+} else { 
+myLayer.style.display="none";
+}
+}
+</script>
+<div id='jqxDropDownList'></div>
+
+<form>
+<input type="text"class="location" name="location" value="not selected" />
+<input type="submit" value="selected!">
+</form>
+
+<div><?php if (isset($_GET['location'])) print('You selected: '.$_GET['location']); ?></div>
+
+</div>
+</body>
+</html>
