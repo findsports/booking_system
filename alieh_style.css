@@ -3,9 +3,8 @@ body {
 	background-attachment:fixed;
 	height:2000px;
 	background:#000;
-	background:url(image/women-doing-yoga2.jpg);
-background-repeat:no-repeat;
-
+	background:url(image/women-doing-yoga22.jpg);
+	background-repeat:repeat-x;
 }
 
 .wrapper{
@@ -13,8 +12,7 @@ background-repeat:no-repeat;
 	width:770px;
 	height:450px;
 	margin: 250px auto;
-	background-repeat:repeat;
-	
+	background-repeat:repeat;	
 }
 
 
@@ -23,20 +21,15 @@ background-repeat:no-repeat;
 #middlebar{
 	font-size: 12px;
 	font-weight: bold;
-	height: 100px;
-	width:450px;
+	height: 200px;
+	width:400px;
 	margin-top:20px;
 }
-
-
-
 
 
 /********By Location / Choose a Sport***************/
 
 /***************People********************/
-.logo {
-	margin:10px 0 0 20px;}
 
 .paragraphe {
 	margin: 10px 0 0 25px;
@@ -53,30 +46,32 @@ background-repeat:no-repeat;
 
 #people_div{
 	float:left;
-	margin-left:30px;
+	margin-left:90px;
 	margin-top:35px;
 	width:170px;
 	height:30px;
 }
 
 #time_picker
-{ float:right;
-	margin-right:30px;
-	margin-top:35px;
+{ float:left;
+	margin-left:90px;
+	margin-top:45px;
 	width:170px;
 }
 
 #date_picker
-{ margin: 5px 0 0 85px;
+{
+	margin-top:-200px;
 	width:270px;
 	height:240px;
-	float:left;
+	float:right;
+	margin-right:80px;
 }
 
 .book{
-	float:inherit;
+	float:left;
 	width:200px;
-	margin:320px 0 0 120px;}
+	margin:50px 0 0 500px;}
 
 
 
